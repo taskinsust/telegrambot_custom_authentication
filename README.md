@@ -16,7 +16,7 @@ BotAuthentication manages a small sqlite db in it's backend, based on user statu
                         NoPermission
                     }
                
-HOW TO CALL https://github.com/taskinsust/telegrambot_custom_authenticatoin
+HOW TO CALL https://github.com/taskinsust/telegrambot_custom_authentication
 
 ITelegramAuthentication BOTAuthentication = new TelegramAuthentication();
 
