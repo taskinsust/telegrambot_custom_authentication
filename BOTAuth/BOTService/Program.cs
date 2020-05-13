@@ -2,8 +2,6 @@
 using System.IO;
 using System.Threading;
 using Microsoft.Extensions.Configuration;
-//using OPUS.TelegramBotClient.Enums;
-//using OPUS.TelegramBotClient.Models;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -15,7 +13,6 @@ using Telegram.Bot.Types;
 using Telegram.Bot.Types.ReplyMarkups;
 using Telegram.Bot.Types.InputFiles;
 using Telegram.Bot.Types.InlineQueryResults;
-
 using BOTService.Model;
 using BOTAuthentication;
 using Newtonsoft.Json;
