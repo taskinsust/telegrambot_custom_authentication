@@ -15,14 +15,10 @@ namespace BOTAuthentication.Helper
         {
             try
             {
-                //string source = "G:\\Taskin" + "\\" + DatabaseName; ;
                 var source = Directory.GetParent(Directory.GetCurrentDirectory()).FullName + "\\DB" + "\\" + DatabaseName;
                 if (!File.Exists(source))
                 {
-                    //string FilePath = source;// Path.Combine(source, DatabaseName);
                     SQLiteConnection.CreateFile(source);
-                    //File.Create(FilePath);
-
                     using (var sqliteConnection = new SQLiteConnection("Data Source=" + source + ";Version=3;"))
                     {
                         //sqliteConnection.SetPassword(DbPassword);

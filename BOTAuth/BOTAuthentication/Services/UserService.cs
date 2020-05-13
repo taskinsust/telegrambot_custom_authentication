@@ -24,7 +24,6 @@ namespace BOTAuthentication.Services
         {
             try
             {
-                var ss = (int)UserStatusEnum.WaitingForApproval;
                 List<UserProfile> userList = _userDao.LoadByUserData(firstName, lastName, userName, userId);
                 if (userList == null || userList.Count <= 0)
                 {
