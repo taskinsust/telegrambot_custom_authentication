@@ -6,6 +6,16 @@ Here I have used the best known .NET Client for Telegram Bot API
 
 https://github.com/TelegramBots/Telegram.Bot
 
+BotAuthentication manages a small sqlite db in it's backend, based on user status it will allow user to query or response with a static message.  
+
+ public enum UserStatusEnum
+                    {
+                        Approve = 1,
+                        WaitingForApproval,
+                        Block,
+                        NoPermission
+                    }
+               
 HOW TO CALL https://github.com/taskinsust/telegrambot_custom_authenticatoin
 
 ITelegramAuthentication BOTAuthentication = new TelegramAuthentication();
