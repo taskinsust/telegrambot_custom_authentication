@@ -36,7 +36,7 @@ namespace OPUS.BOTService
                 {
                     try
                     {
-                        Bot = new Telegram.Bot.TelegramBotClient("1044782323:AAG5KZu_7Igg9jKztbq9ib3MlKYpMjkmINE");
+                        Bot = new Telegram.Bot.TelegramBotClient("place_your_BOT_API_Token_Here");
                         BOTAuthentication = new TelegramAuthentication();
 
                         Bot.OnMessage += BotOnMessageReceived;
@@ -46,7 +46,6 @@ namespace OPUS.BOTService
                         Bot.StartReceiving(Array.Empty<UpdateType>());
 
                         Console.ReadLine();
-
                     }
                     catch (Exception e)
                     {
